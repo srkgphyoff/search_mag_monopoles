@@ -1,0 +1,1 @@
+This project consists of code, which I have written in Summer Internship at NISER. The project was on Search for Magnetic Monopoles. The work is done using BDT model from ROOT TMVA as discriminator between signal and background data. 
