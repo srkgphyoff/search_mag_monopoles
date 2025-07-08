@@ -1,0 +1,51 @@
+<HEADER> Factory                  : Booking method: BDTfinal
+                         : 
+                         : Rebuilding Dataset dataset
+                         : Building event vectors for type 0 Signal
+                         : Dataset[dataset] :  create input formulas for tree sig
+                         : Building event vectors for type 1 Signal
+                         : Dataset[dataset] :  create input formulas for tree sig
+                         : Building event vectors for type 0 Background
+                         : Dataset[dataset] :  create input formulas for tree bkg
+                         : Building event vectors for type 1 Background
+                         : Dataset[dataset] :  create input formulas for tree bkg
+<HEADER> DataSetFactory           : [dataset] : Number of events in input trees
+                         : 
+                         : 
+                         : Dataset[dataset] : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+                         : Dataset[dataset] :  such that the effective (weighted) number of events in each class is the same 
+                         : Dataset[dataset] :  (and equals the number of events (entries) given for class=0 )
+                         : Dataset[dataset] : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+                         : Dataset[dataset] : ... (note that N_j is the sum of TRAINING events
+                         : Dataset[dataset] :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 1049610
+                         : Signal     -- testing events             : 1048532
+                         : Signal     -- training and testing events: 2098142
+                         : Background -- training events            : 15649959
+                         : Background -- testing events             : 15652710
+                         : Background -- training and testing events: 31302669
+                         : 
+<HEADER> DataSetInfo              : Correlation matrix (Signal):
+                         : -------------------------------------------------------------------------------
+                         :               ADC_mean nhits_min entry_dist exit_dist docasqrx_max docasqry_max
+                         :     ADC_mean:   +1.000    +0.166     -0.118    -0.113       -0.103       -0.099
+                         :    nhits_min:   +0.166    +1.000     -0.144    -0.135       -0.056       -0.081
+                         :   entry_dist:   -0.118    -0.144     +1.000    +0.321       +0.233       +0.300
+                         :    exit_dist:   -0.113    -0.135     +0.321    +1.000       +0.228       +0.288
+                         : docasqrx_max:   -0.103    -0.056     +0.233    +0.228       +1.000       +0.213
+                         : docasqry_max:   -0.099    -0.081     +0.300    +0.288       +0.213       +1.000
+                         : -------------------------------------------------------------------------------
+<HEADER> DataSetInfo              : Correlation matrix (Background):
+                         : -------------------------------------------------------------------------------
+                         :               ADC_mean nhits_min entry_dist exit_dist docasqrx_max docasqry_max
+                         :     ADC_mean:   +1.000    +0.602     -0.126    -0.347       +0.047       +0.139
+                         :    nhits_min:   +0.602    +1.000     -0.159    -0.309       +0.038       +0.128
+                         :   entry_dist:   -0.126    -0.159     +1.000    +0.077       +0.004       +0.007
+                         :    exit_dist:   -0.347    -0.309     +0.077    +1.000       -0.014       -0.052
+                         : docasqrx_max:   +0.047    +0.038     +0.004    -0.014       +1.000       +0.022
+                         : docasqry_max:   +0.139    +0.128     +0.007    -0.052       +0.022       +1.000
+                         : -------------------------------------------------------------------------------
+<HEADER> DataSetFactory           : [dataset] :  
+                         : 

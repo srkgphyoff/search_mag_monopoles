@@ -1,0 +1,100 @@
+<HEADER> Factory                  : Train all methods
+<HEADER> Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+<HEADER>                          : Transformation, Variable selection : 
+                         : Input : variable 'ADC_mean' <---> Output : variable 'ADC_mean'
+                         : Input : variable 'nhits_min' <---> Output : variable 'nhits_min'
+                         : Input : variable 'entry_dist' <---> Output : variable 'entry_dist'
+                         : Input : variable 'exit_dist' <---> Output : variable 'exit_dist'
+                         : Input : variable 'docasqrx_max' <---> Output : variable 'docasqrx_max'
+                         : Input : variable 'docasqry_max' <---> Output : variable 'docasqry_max'
+<HEADER> TFHandler_Factory        :     Variable            Mean            RMS    [        Min            Max ]
+                         : -------------------------------------------------------------------------------
+                         :     ADC_mean:        1848.4        1264.8   [        180.35        3722.9 ]
+                         :    nhits_min:        62.368        48.967   [        0.0000        1746.0 ]
+                         :   entry_dist:        21.821        68.846   [    3.5948e-07        762.29 ]
+                         :    exit_dist:        73.451        144.40   [    1.1387e-05        762.28 ]
+                         : docasqrx_max:        92.346        978.51   [        0.0000    1.6197e+06 ]
+                         : docasqry_max:        84.467        311.92   [        0.0000    7.5607e+05 ]
+                         : -------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+<HEADER> IdTransformation         : Ranking result (top variable is best ranked)
+                         : -------------------------------------
+                         : Rank : Variable     : Separation
+                         : -------------------------------------
+                         :    1 : ADC_mean     : 8.262e-01
+                         :    2 : docasqry_max : 3.640e-01
+                         :    3 : exit_dist    : 2.421e-01
+                         :    4 : nhits_min    : 1.757e-01
+                         :    5 : docasqrx_max : 1.231e-01
+                         :    6 : entry_dist   : 5.658e-02
+                         : -------------------------------------
+<HEADER> Factory                  : Train method: BDTfinal for Classification
+                         : 
+<HEADER> BDTfinal                 : #events: (reweighted) sig: 8.34978e+06 bkg: 8.34978e+06
+                         : #events: (unweighted) sig: 1049610 bkg: 15649959
+                         : Training 300 Decision Trees ... patience please
+                         : Elapsed time for training with 16699569 events: 2.29e+03 sec         
+<HEADER> BDTfinal                 : [dataset] : Evaluation of BDTfinal on training sample (16699569 events)
+                         : Elapsed time for evaluation of 16699569 events: 241 sec       
+                         : Creating xml weight file: dataset/weights/tmvaTest_BDTfinal.weights.xml
+                         : Creating standalone class: dataset/weights/tmvaTest_BDTfinal.class.C
+                         : TMVAfinal.root:/dataset/Method_BDT/BDTfinal
+<HEADER> Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+<HEADER> BDTfinal                 : Ranking result (top variable is best ranked)
+                         : ----------------------------------------------
+                         : Rank : Variable     : Variable Importance
+                         : ----------------------------------------------
+                         :    1 : ADC_mean     : 4.128e-01
+                         :    2 : exit_dist    : 1.369e-01
+                         :    3 : nhits_min    : 1.306e-01
+                         :    4 : entry_dist   : 1.212e-01
+                         :    5 : docasqry_max : 1.188e-01
+                         :    6 : docasqrx_max : 7.974e-02
+                         : ----------------------------------------------
+<HEADER> Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: dataset/weights/tmvaTest_BDTfinal.weights.xml
+<HEADER> Factory                  : Test all methods
+<HEADER> Factory                  : Test method: BDTfinal for Classification performance
+                         : 
+<HEADER> BDTfinal                 : [dataset] : Evaluation of BDTfinal on testing sample (16701242 events)
+                         : Elapsed time for evaluation of 16701242 events: 195 sec       
+<HEADER> Factory                  : Evaluate all methods
+<HEADER> Factory                  : Evaluate classifier: BDTfinal
+                         : 
+<HEADER> BDTfinal                 : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+<HEADER> TFHandler_BDTfinal       :     Variable            Mean            RMS    [        Min            Max ]
+                         : -------------------------------------------------------------------------------
+                         :     ADC_mean:        1847.9        1264.6   [        198.37        3722.9 ]
+                         :    nhits_min:        62.379        48.978   [        0.0000        974.00 ]
+                         :   entry_dist:        21.815        68.819   [    3.5948e-07        762.23 ]
+                         :    exit_dist:        73.463        144.40   [    3.2760e-06        762.09 ]
+                         : docasqrx_max:        92.366        965.16   [        0.0000    1.6197e+06 ]
+                         : docasqry_max:        84.542        440.65   [        0.0000    1.8506e+06 ]
+                         : -------------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       BDTfinal       : 0.994
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              BDTfinal       : 0.922 (0.922)       0.978 (0.978)      1.000 (1.000)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+<HEADER> Dataset:dataset          : Created tree 'TestTree' with 16701242 events
+                         : 
+<HEADER> Dataset:dataset          : Created tree 'TrainTree' with 16699569 events
+                         : 
+<HEADER> Factory                  : Thank you for using TMVA!
+                         : For citation information, please visit: http://tmva.sf.net/citeTMVA.html

@@ -1,0 +1,19 @@
+BDT model , AUC = 0.9939
+punzi cut = 0.703030303030303
+
+
+
+
+
+
+
+#DNN
+
+"VarTransform=Norm:ErrorStrategy=CROSSENTROPY:"
+    "Layout=F:32:32:16:1:ActivationFunction=ReLU:ReLU:ReLU:Sigmoid:"
+    "TrainingStrategy=LearningRate=1e-3,Momentum=0.9,"
+    "ConvergenceSteps=10,BatchSize=1024,TestRepetitions=1,"
+    "MaxEpochs=30,WeightDecay=1e-4,DropConfig=0.2+0.2+0.0"
+
+MLP model, AUC = 0.9908
+punzi cut = 
