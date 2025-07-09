@@ -2,6 +2,8 @@ BDT model , AUC = 0.9939
 punzi cut = 0.703030303030303
 
 
+BDT15, AUC = 0.9973
+
 
 
 
