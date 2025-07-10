@@ -2,8 +2,9 @@ BDT model , AUC = 0.9939
 punzi cut = 0.703030303030303
 
 
-BDT15, AUC = 0.9973
+BDT check model 1 , AUC = 0.9896
 
+"NTrees=800:BoostType=Grad:MaxDepth=3:MinNodeSize=1.0:Shrinkage=0.05:nCuts=200:UseBaggedBoost=True:BaggedSampleFraction=0.6"
 
 
 MLP model, AUC = 0.9908
