@@ -5,8 +5,39 @@ punzi cut = 0.703030303030303
 BDT check model 2 , AUC = 0.9896
 "NTrees=800:BoostType=AdaBoost:MaxDepth=3:MinNodeSize=1.0:Shrinkage=0.05:nCuts=200:UseBaggedBoost=True:BaggedSampleFraction=0.6"
 
-BDT check model 3 
+BDT check model 3 , AUC = 0.9998
 "NTrees=600:BoostType=AdaBoost:MaxDepth=3:MinNodeSize=1.0:Shrinkage=0.1:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 4, AUC = 0.9998
+"NTrees=600:BoostType=AdaBoost:MaxDepth=5:MinNodeSize=1.0:Shrinkage=0.1:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 5, AUC = 0.9997 (***)
+"NTrees=600:BoostType=AdaBoost:MaxDepth=5:MinNodeSize=1.0:AdaBoostBeta=0.1:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 6, AUC = 0.9995
+"NTrees=600:BoostType=Grad:MaxDepth=5:MinNodeSize=1.0:Shrinkage=0.1:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 7, AUC = 0.9994
+"NTrees=400:BoostType=Grad:MaxDepth=3:MinNodeSize=1.0:Shrinkage=0.1:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 8, 0.9996
+"NTrees=600:BoostType=AdaBoost:MaxDepth=3:MinNodeSize=1.0:AdaBoostBeta=0.3:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 9, 0.9998
+"NTrees=800:BoostType=AdaBoost:MaxDepth=5:MinNodeSize=1.0:AdaBoostBeta=0.5:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 10, 0.999767 (FINAL MODEL USED), punzi cut = 0.3252525
+"NTrees=800:BoostType=AdaBoost:MaxDepth=5:MinNodeSize=1.0:AdaBoostBeta=0.5:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.6"
+
+BDT check model 11, 0.999701
+"NTrees=1000:BoostType=AdaBoost:MaxDepth=3:MinNodeSize=2.0:AdaBoostBeta=0.5:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.5"
+
+BDT check model 12, 
+"NTrees=400:BoostType=AdaBoost:MaxDepth=3:MinNodeSize=2.5:AdaBoostBeta=0.5:nCuts=50:UseBaggedBoost=True:BaggedSampleFraction=0.5"
+
+
+
+
 
 
 MLP model, AUC = 0.9908
